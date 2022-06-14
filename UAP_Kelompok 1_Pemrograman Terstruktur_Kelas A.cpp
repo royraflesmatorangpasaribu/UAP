@@ -19,6 +19,30 @@ void display(){
 	cout << "Golongan 4: Kendaraan truk besar dengan empat gandar" << endl;
 	cout << "Golongan 5: Kendaraan truk besar dengan lima gandar" << endl;
 	cout << "pilih jenis mobil : ";
+	cin >> mobil;
+	cin.ignore();
+	if(mobil == 1){
+		gol = "Golongan 1";
+        	harga ="Rp20.000";
+    	}
+	else if(mobil == 2){
+		gol = "Golongan 2";	
+        	harga = "Rp30.000";	
+	}
+	else if(mobil == 3){
+		gol = "Golongan 3";
+        	harga = "Rp35.000";	
+	}
+	else if(mobil == 4){
+		gol = "Golongan 4";
+        	harga = "Rp40.000";		
+	}
+	else if(mobil == 5){
+		gol = "Golongan 5";	
+        	harga = "Rp45.000";	
+	}
+	cout << "Masukan Nomor Polisi  : ";
+    	getline(cin, plat);
 }
 
 // fungsi push
