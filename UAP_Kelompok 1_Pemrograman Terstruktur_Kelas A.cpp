@@ -36,7 +36,7 @@ void dequeue(){
 
 // fungsi size
 void size(){
-    if(data.empty()){
+    if(data.empty()){		//fungsi empty untuk menghapus seluruh data pada queue
         cout << "\nAntrian Kosong!\n";
     }
     else{
