@@ -13,7 +13,7 @@ string noPolisi;
 void enqueue(){
     do{
     	system("cls");
-    	cout<<"Masukan Nomor Polisi  : ";
+    	cout << "Masukan Nomor Polisi  : ";
     	getline(cin, noPolisi);
     	if(noPolisi.empty()){
         	cout << "\nKendaraan Tidak Boleh Kosong!";
@@ -26,17 +26,17 @@ void enqueue(){
 // fungsi pop
 void dequeue(){
     if(data.empty()){
-        cout<<"Kendaraan Kosong!"<<endl;
+        cout << "Kendaraan Kosong!" << endl;
     }
     else{
-        cout << "\nKendaraan dengan "<<data.front()<<" pada Antrian Pertama Telah pergi!\n";
+        cout << "\nKendaraan dengan " << data.front() << " pada Antrian Pertama Telah pergi!\n";
         data.pop();
     }
 }
 
 // fungsi size
 void size(){
-    if(data.empty()){		// fungsi empty untuk menghapus seluruh data pada queue
+    if(data.empty()){								// fungsi empty untuk menghapus seluruh data pada queue
         cout << "\nAntrian Kosong!\n";
     }
     else{
@@ -47,7 +47,7 @@ void size(){
 }
 
 // fungsi view
-void view(queue<string> gq){
+void view(queue <string> gq){
     if(data.empty()){
 	cout << "===============================" << endl;
 	cout << "|       Daftar Kendaraan      |" << endl;
@@ -58,7 +58,7 @@ void view(queue<string> gq){
        	cout << "===============================" << endl;
 	cout << "|       Daftar Kendaraan      |" << endl;
 	cout << "===============================" << endl;
-        queue<string> g = gq;
+        queue <string> g = gq;
         while (!g.empty()){
         	cout << '\n' << g.front();
         	g.pop();
