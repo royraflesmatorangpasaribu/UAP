@@ -64,7 +64,7 @@ int main(){
         view(data);
         cout << "\n1. Masukkan No Polisi Kendaraan"
              << "\n2. Memasukkan Kendaraan Ke Toll"
-             << "\n3. Size"
+             << "\n3. Kondisi Lalu Lintas Toll"
              << "\n4. Keluar Sistem"
              << "\n\n>> Choose : "; 
             cin >> pilihan;
