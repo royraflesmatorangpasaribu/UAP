@@ -29,6 +29,23 @@ void dequeue(){
     }
 }
 
+void view(queue<string> gq)
+{
+    if(data.empty()){
+        cout << "=== Daftar Kendaraan ===\n";
+        cout << "\nAntrian Kosong!\n";
+    }
+    else{
+        cout << "=== Daftar Kendaraan ===\n";
+        queue<string> g = gq;
+        while (!g.empty()){
+        cout << '\n' << g.front();
+        g.pop();
+    }
+    cout << '\n';
+    }
+}
+
 int main(){
 	
 }
