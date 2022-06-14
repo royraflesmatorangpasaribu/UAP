@@ -58,5 +58,14 @@ void view(queue<string> gq)
 }
 
 int main(){
-	
+	do{
+        view(data);
+        cout << "\n1. Masukkan No Polisi Kendaraan"
+             << "\n2. Memasukkan Kendaraan Ke Toll"
+             << "\n3. Size"
+             << "\n4. Keluar Sistem"
+             << "\n\n>> Choose : "; 
+            cin >> pilihan;
+            cin.ignore();
+	}while(pilihan != 4);
 }
