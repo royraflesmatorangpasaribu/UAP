@@ -60,6 +60,7 @@ void view(queue<string> gq){
 }
 
 int main(){
+	int pilihan;
 	do{
         view(data);
         cout << "\n1. Masukkan No Polisi Kendaraan"
