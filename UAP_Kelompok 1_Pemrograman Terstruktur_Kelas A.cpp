@@ -49,7 +49,9 @@ void view(queue<string> gq){
         cout << "\nAntrian Kosong!\n";
     }
     else{
-        cout << "=== Daftar Kendaraan ===\n";
+       	cout << "===============================" << endl;
+	cout << "|       Daftar Kendaraan      |" << endl;
+	cout << "===============================" << endl;
         queue<string> g = gq;
         while (!g.empty()){
         	cout << '\n' << g.front();
