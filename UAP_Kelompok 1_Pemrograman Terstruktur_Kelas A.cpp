@@ -29,6 +29,17 @@ void dequeue(){
     }
 }
 
+void size(){
+    if(data.empty()){
+        cout << "\nAntrian Kosong!\n";
+    }
+    else{
+        cout << "\nJumlah Kendaraan Saat Ini\t\t: " << data.size() << endl;
+        cout << "Antrian Paling Awal\t: " << data.front() << endl;
+        cout << "Antrian Paling Akhir\t: " << data.back() << endl;
+    }
+}
+
 void view(queue<string> gq)
 {
     if(data.empty()){
