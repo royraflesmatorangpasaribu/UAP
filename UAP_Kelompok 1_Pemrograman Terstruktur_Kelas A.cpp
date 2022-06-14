@@ -35,8 +35,8 @@ void size(){
     }
     else{
         cout << "\nJumlah Kendaraan Saat Ini\t\t: " << data.size() << endl;
-        cout << "Antrian Paling Awal\t: " << data.front() << endl;
-        cout << "Antrian Paling Akhir\t: " << data.back() << endl;
+        cout << "Kendaraan Paling Depan\t: " << data.front() << endl;
+        cout << "Kendaraan Paling Belakang\t: " << data.back() << endl;
     }
 }
 
