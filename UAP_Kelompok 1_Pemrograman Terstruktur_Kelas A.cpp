@@ -1,4 +1,6 @@
-#include<iostream>
+#include <iostream>
+#include <queue>
+#include <conio.h>
 using namespace std;
 
 queue<string>data;
