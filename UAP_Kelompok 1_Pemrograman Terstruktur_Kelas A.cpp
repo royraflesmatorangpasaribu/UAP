@@ -25,8 +25,8 @@ void enqueue(){
 
 // fungsi pop
 void dequeue(){
-    if(data.empty()){
-        cout << "Kendaraan Kosong!" << endl;
+    if(data.empty()){								// fungsi empty untuk menghapus seluruh data pada queue
+        cout << "Kendaraan Kosong!" << endl;				
     }
     else{
         cout << "\nKendaraan dengan " << data.front() << " pada Antrian Pertama Telah pergi!\n";
@@ -36,8 +36,8 @@ void dequeue(){
 
 // fungsi size
 void size(){
-    if(data.empty()){								// fungsi empty untuk menghapus seluruh data pada queue
-        cout << "\nAntrian Kosong!\n";
+    if(data.empty()){								
+        cout << "\nKendaraan Kosong!\n";
     }
     else{
         cout << "\nJumlah Kendaraan Saat Ini\t\t: " << data.size() << endl;	// fungsi size untuk menampilkan seluruh data pada queue
@@ -103,5 +103,7 @@ int main(){
 		}
         	system("cls");
 	}while(pilihan != 4);
+	
+	//karena menggunakan fungsi main()
 	return 0;
 }
