@@ -77,5 +77,15 @@ int main(){
                 size();
                 getch();
                 break;
+	    case 4:
+                cout << "\nTerima Kasih Telah Menggunakan Program Ini" << endl;
+                getch();
+                break;
+            default:
+                cout << "\nPilihan Tidak Ada\nMasukan Pilihan Sesuai Dengan Daftar" << endl;
+                getch();
+                break;
+	    }
+        system("cls");
 	}while(pilihan != 4);
 }
