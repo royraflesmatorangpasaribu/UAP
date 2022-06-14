@@ -41,7 +41,7 @@ void size(){
     }
     else{
         cout << "\nJumlah Kendaraan Saat Ini\t\t: " << data.size() << endl;	// fungsi size untuk menampilkan seluruh data pada queue
-        cout << "Kendaraan Paling Depan\t: " << data.front() << endl;
+        cout << "Kendaraan Paling Depan\t: " << data.front() << endl;		// fungsi front untuk menampilkan data paling depan pada queue
         cout << "Kendaraan Paling Belakang\t: " << data.back() << endl;
     }
 }
