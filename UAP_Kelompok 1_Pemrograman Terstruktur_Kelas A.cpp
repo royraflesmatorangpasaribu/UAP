@@ -9,6 +9,18 @@ using namespace std;
 queue<string>data;
 string noPolisi, plat, harga, gol;
 
+void display(){
+	int mobil;
+	mobil=0;
+	cout << "pilihan jenis mobil" << endl;
+	cout << "Golongan 1: Kendaraan jenis sedan, mobil jip, pikap atau truk kecil, dan bus" << endl;
+	cout << "Golongan 2: Kendaraan truk besar dengan dua gandar" << endl;
+	cout << "Golongan 3: Kendaraan truk besar dengan tiga gandar" << endl;
+	cout << "Golongan 4: Kendaraan truk besar dengan empat gandar" << endl;
+	cout << "Golongan 5: Kendaraan truk besar dengan lima gandar" << endl;
+	cout << "pilih jenis mobil : ";
+}
+
 // fungsi push
 void enqueue(){
     do{
