@@ -43,7 +43,9 @@ void size(){
 void view(queue<string> gq)
 {
     if(data.empty()){
-        cout << "=== Daftar Kendaraan ===\n";
+	cout << "=============================" << endl;
+	cout << "|       Daftar Kendaraan    |" << endl;
+	cout << "=============================" << endl;
         cout << "\nAntrian Kosong!\n";
     }
     else{
