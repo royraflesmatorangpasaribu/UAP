@@ -29,7 +29,7 @@ void dequeue(){
         cout<<"Kendaraan Kosong!"<<endl;
     }
     else{
-        cout << "\nKendaraan pada Antrian Pertama Telah pergi!\n";
+        cout << "\nKendaraan dengan "<<data.front()<<" pada Antrian Pertama Telah pergi!\n";
         data.pop();
     }
 }
