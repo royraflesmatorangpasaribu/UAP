@@ -19,6 +19,16 @@ void enqueue(){
     data.push(noPolisi);
 }
 
+void dequeue(){
+    if(data.empty()){
+        cout<<"Kendaraan Kosong!"<<endl;
+    }
+    else{
+        cout << "\nKendaraan pada Antrian Pertama Telah pergi!\n";
+        data.pop();
+    }
+}
+
 int main(){
 	
 }
