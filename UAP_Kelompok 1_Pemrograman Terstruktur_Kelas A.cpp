@@ -1,6 +1,7 @@
 #include <iostream>
 #include <queue>
 #include <conio.h>
+
 using namespace std;
 
 queue<string>data;
@@ -8,13 +9,13 @@ string noPolisi;
 
 void enqueue(){
     do{
-    system("cls");
-    cout<<"Masukan Nomor Polisi  : ";
-    getline(cin, noPolisi);
-    if(noPolisi.empty()){
-        cout << "\nKendaraan tidak boleh Kosong!";
-        getch();
-    }
+    	system("cls");
+    	cout<<"Masukan Nomor Polisi  : ";
+    	getline(cin, noPolisi);
+    	if(noPolisi.empty()){
+        	cout << "\nKendaraan tidak boleh Kosong!";
+        	getch();
+    	}
     }while(noPolisi.empty());
     data.push(noPolisi);
 }
@@ -40,21 +41,20 @@ void size(){
     }
 }
 
-void view(queue<string> gq)
-{
+void view(queue<string> gq){
     if(data.empty()){
-	cout << "=============================" << endl;
-	cout << "|       Daftar Kendaraan    |" << endl;
-	cout << "=============================" << endl;
+	cout << "===============================" << endl;
+	cout << "|       Daftar Kendaraan      |" << endl;
+	cout << "===============================" << endl;
         cout << "\nAntrian Kosong!\n";
     }
     else{
         cout << "=== Daftar Kendaraan ===\n";
         queue<string> g = gq;
         while (!g.empty()){
-        cout << '\n' << g.front();
-        g.pop();
-    }
+        	cout << '\n' << g.front();
+        	g.pop();
+    	}
     cout << '\n';
     }
 }
@@ -69,7 +69,7 @@ int main(){
              << "\n\n>> Choose : "; 
             cin >> pilihan;
             cin.ignore();
-		 case 1:
+	    case 1:
                 enqueue();
                 getch();
                 break;
