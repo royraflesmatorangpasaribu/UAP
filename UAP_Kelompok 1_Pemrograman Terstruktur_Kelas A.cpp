@@ -70,6 +70,7 @@ int main(){
              << "\n\n>> Choose : "; 
             cin >> pilihan;
             cin.ignore();
+	    switch(pilihan){
 	    case 1:
                 enqueue();
                 getch();
@@ -93,4 +94,6 @@ int main(){
 	    }
         system("cls");
 	}while(pilihan != 4);
+	
+	return 0;
 }
