@@ -67,5 +67,17 @@ int main(){
              << "\n\n>> Choose : "; 
             cin >> pilihan;
             cin.ignore();
+		 case 1:
+                enqueue();
+                getch();
+                break;
+            case 2:
+                dequeue();
+                getch();
+                break;
+            case 3:
+                size();
+                getch();
+                break;
 	}while(pilihan != 4);
 }
