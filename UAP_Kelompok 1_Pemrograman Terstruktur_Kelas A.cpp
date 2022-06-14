@@ -7,7 +7,7 @@ using namespace std;
 
 // variabel Global
 queue<string>data;
-string noPolisi;
+string noPolisi, plat, harga, gol;
 
 // fungsi push
 void enqueue(){
