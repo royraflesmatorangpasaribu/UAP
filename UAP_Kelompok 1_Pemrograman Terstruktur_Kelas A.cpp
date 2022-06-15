@@ -52,15 +52,79 @@ void display(){
 // fungsi push
 void enqueue(){
     do{
+    	ulangTuju:
     	system("cls");
-    	cout << "Masukan Nomor Polisi  : ";
-    	getline(cin, noPolisi);
-    	if(noPolisi.empty()){
-        	cout << "\nKendaraan Tidak Boleh Kosong!";
-        	getch();
-    	}
-    }while(noPolisi.empty());
+    	display();
+		
+    	cout <<endl;
+    	cout << " >> Tujuan Perjalanan 1. Palembang" << endl;
+    	cout << "\t\t      2. Pemulutan" << endl;
+    	cout << " >> Pilih Tujuan : ";
+    	getline(cin, tujuan);
+    	
+    	if(tujuan.empty()){
+    		cout << endl << " Tujuan Perjalanan Tidak Boleh Kosong!";
+    		getch();
+		}
+		else if(tujuan == "1"){
+			tujuan = "Palembang";
+			
+			ulang_1:
+    		system("cls");
+    		display();
+    	
+			cout << " >> Masukkan Jenis Kendaraan\t: ";
+			getline(cin, mobil);
+			
+			if(mobil.empty()){
+				cout << endl << " Jenis Kendaraan Tidak Boleh Kosong!";
+				getch();
+				goto ulang_1;
+    		}
+    		
+    		else{
+				if(mobil == "1"){
+					gol = "Golongan 1";
+					harga = "Rp20.500";
+				}
+			
+				else if(mobil == "2"){
+					gol = "Golongan 2";
+					harga = "Rp26.000";
+				}
+		
+				else if(mobil == "3"){
+					gol = "Golongan 3";
+					harga = "Rp31.000";
+				}
+			
+				else if(mobil == "4"){
+					gol = "Golongan 4";
+					harga = "Rp37.500";
+				}
+			
+				else if(mobil == "5"){
+					gol = "Golongan 5";
+					harga = "Rp41.000";
+				}	
+				else{
+					cout << " Golongan Mobil Tidak Tersedia";
+					getch();
+					goto ulang_1;
+				}
+			
+			cout << endl << " Kendaraan Tujuan " << tujuan << " " << gol << " bertarif " << harga << endl;
+			getch();
+			
+			
+		
+    }while(tujuan.empty());
+    
+    jalan.push(tujuan);
+    jenis.push(gol);
+    tarif.push(harga);
     data.push(noPolisi);
+    
 }
 
 // fungsi pop
