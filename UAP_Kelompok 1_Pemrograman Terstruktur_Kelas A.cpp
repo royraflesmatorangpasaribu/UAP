@@ -1,13 +1,18 @@
-// library
+//Library
 #include <iostream> 	//iostream adalah header yang dibutuhkan untuk “kegiatan” input dan output. 
 #include <queue>	// Memanggil STL Queue pada C++
 #include <conio.h>	//Fungsi getch() (get character and echo) dipakai untuk membaca sebuah karakter dengan sifat karakter yang dimasukkan tidak perlu diakhiri dengan menekan tombol ENTER
+#include <ctime>    // mengkonvesi nilai yang dihasilkan dari pemangilan fungsi time() ke dalam bentuk string.
 
 using namespace std;
 
 // variabel Global
 queue<string>data;
-string noPolisi, plat, harga, gol;
+queue<string>jalan;
+queue<string>tarif;
+queue<string>jenis;
+
+string mobil, noPolisi, harga, gol, tujuan;
 
 void display(){
 	int mobil;
