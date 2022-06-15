@@ -50,7 +50,13 @@
 
  >> Tujuan Perjalanan 1. Palembang
                       2. Pemulutan
- >> Pilih Tujuan :
+ >> Pilih Tujuan : ( input = 1)
+ 
+ >> Masukkan Jenis Kendaraan    : ( input = 1 )
+ Kendaraan Tujuan Palembang Golongan 1 bertarif Rp20.500 (output if Tujuan (1) & Jenis Kendaraan (1))
+ 
+ >> Masukan Nomor Polisi        : (input = BE 3498 AJ)
+
 
 // Antrian Terisi
 
@@ -103,3 +109,18 @@
         +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         --------------------------TOL INDRALAYA--------------------------
         +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        
+// Antrian setelah di pop
+
+                =====================================================
+                                Pintu 1 Tol Indralaya
+                =====================================================
+
+                Palembang - BE 2508 AG Golongan 1
+                Pemulutan - BE 2655 UE Golongan 4
+
+                1. Masukkan Data kendaraan
+                2. Memasukkan Kendaraan Ke Tol
+                3. Kondisi Lalu Lintas Tol
+                4. Keluar Sistem
+
