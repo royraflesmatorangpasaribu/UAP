@@ -252,7 +252,7 @@ void size(){
 }
 
 // fungsi view
-void view(queue <string> gq){
+void view(queue <string> tujuanview, queue <string> platview, queue <string> golview){
     if(data.empty()){
 	    cout << "\t\t=====================================================" << endl;
 	    cout << "\t\t\t\tPintu 1 Tol Indralaya  " << endl;
@@ -268,6 +268,7 @@ void view(queue <string> gq){
         queue <string> g = golview;
         while (!p.empty() && !g.empty()){
         	cout << "\n\t\t" << t.front() << " - " << p.front() << " " << g.front();
+		t.pop(); p.pop(); g.pop();
     	}
     cout << '\n';
     }
