@@ -217,7 +217,7 @@ void enqueue(){
 // fungsi pop
 void dequeue(){
     if(data.empty()){		// fungsi empty untuk menghapus seluruh data pada queue
-        cout << "\t\t\nNotifikasi : Antrian Kendaraan Kosong!" << endl;				
+        cout << "\n\t\tNotifikasi : Antrian Kendaraan Kosong!" << endl;				
     }
     else{
 	system("cls");
