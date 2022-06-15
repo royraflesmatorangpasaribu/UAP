@@ -116,7 +116,94 @@ void enqueue(){
 			cout << endl << " Kendaraan Tujuan " << tujuan << " " << gol << " bertarif " << harga << endl;
 			getch();
 			
+			do{
+				system("cls");
+				display();
+				
+				cout << " >> Masukan Nomor Polisi\t: ";
+				getline(cin, noPolisi);
+				
+				if(noPolisi.empty()){
+					cout << endl << " Kendaraan Tidak Boleh Kosong!" << flush;
+					getch();
+				}
+				
+			}while(noPolisi.empty());
 			
+			}
+		
+		}
+		else if(tujuan == "2"){
+			tujuan = "Pemulutan";
+			
+			ulang_2:
+    		system("cls");
+    		display();
+    	
+			cout << " >> Masukkan Jenis Kendaraan\t: ";
+			getline(cin, mobil);
+			
+			if(mobil.empty()){
+				cout << endl << " Jenis Kendaraan Tidak Boleh Kosong!";
+				getch();
+				goto ulang_2;
+    		}
+    		
+    		else{
+				if(mobil == "1"){
+					gol = "Golongan 1";
+					harga = "Rp13.500";
+				}
+			
+				else if(mobil == "2"){
+					gol = "Golongan 2";
+					harga = "Rp17.000";
+				}
+		
+				else if(mobil == "3"){
+					gol = "Golongan 3";
+					harga = "Rp20.000";
+				}
+			
+				else if(mobil == "4"){
+					gol = "Golongan 4";
+					harga = "Rp25.000";
+				}
+			
+				else if(mobil == "5"){
+					gol = "Golongan 5";
+					harga = "Rp27.000";
+				}	
+				else{
+					cout << " Golongan Mobil Tidak Tersedia";
+					getch();
+					goto ulang_2;
+				}
+			
+			cout << endl << " Kendaraan Tujuan " << tujuan << " " << gol << " bertarif " << harga << endl;
+			getch();
+			
+			do{
+				system("cls");
+				display();
+				
+				cout << " >> Masukan Nomor Polisi\t: ";
+				getline(cin, noPolisi);
+				
+				if(noPolisi.empty()){
+					cout << endl << "\t\t\nKendaraan Tidak Boleh Kosong!" << flush;
+					getch();
+					}
+				
+				}while(noPolisi.empty());
+			}
+		}
+		
+		else{
+			cout << "\n Notifikasi : Tujuan Anda Tidak Tersedia" << endl;
+			getch();
+			goto ulangTuju;
+		}
 		
     }while(tujuan.empty());
     
