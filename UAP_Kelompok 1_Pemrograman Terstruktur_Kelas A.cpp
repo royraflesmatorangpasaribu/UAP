@@ -15,39 +15,23 @@ queue<string>jenis;
 string mobil, noPolisi, harga, gol, tujuan;
 
 void display(){
-	int mobil;
-	mobil=0;
-	cout << "pilihan jenis mobil" << endl;
-	cout << "Golongan 1: Kendaraan jenis sedan, mobil jip, pikap atau truk kecil, dan bus" << endl;
-	cout << "Golongan 2: Kendaraan truk besar dengan dua gandar" << endl;
-	cout << "Golongan 3: Kendaraan truk besar dengan tiga gandar" << endl;
-	cout << "Golongan 4: Kendaraan truk besar dengan empat gandar" << endl;
-	cout << "Golongan 5: Kendaraan truk besar dengan lima gandar" << endl;
-	cout << "pilih jenis mobil : ";
-	cin >> mobil;
-	cin.ignore();
-	if(mobil == 1){
-		gol = "Golongan 1";
-        	harga ="Rp20.000";
-    	}
-	else if(mobil == 2){
-		gol = "Golongan 2";	
-        	harga = "Rp30.000";	
-	}
-	else if(mobil == 3){
-		gol = "Golongan 3";
-        	harga = "Rp35.000";	
-	}
-	else if(mobil == 4){
-		gol = "Golongan 4";
-        	harga = "Rp40.000";		
-	}
-	else if(mobil == 5){
-		gol = "Golongan 5";	
-        	harga = "Rp45.000";	
-	}
-	cout << "Masukan Nomor Polisi  : ";
-    	getline(cin, plat);
+	cout << " ------------------------------------------------------------------------------------------------" << endl;
+	cout << "                                TARIF TOL PADA RUAS JALAN TOL INDRALAYA                          " << endl;
+	cout << " ------------------------------------------------------------------------------------------------" << endl;
+	cout << "   Golongan 1: Kendaraan jenis sedan, mobil jip, pikap atau truk kecil, dan bus" << endl;
+	cout << "   Golongan 2: Kendaraan truk besar dengan dua gandar" << endl;
+	cout << "   Golongan 3: Kendaraan truk besar dengan tiga gandar" << endl;
+	cout << "   Golongan 4: Kendaraan truk besar dengan empat gandar" << endl;
+	cout << "   Golongan 5: Kendaraan truk besar dengan lima gandar" << endl;
+	cout << "-------------------------------------------------------------------------------------------------" << endl;
+	cout << "|                  |                     |                     Tarif Tol (Rp)                   |" << endl;
+	cout << "|  Asal Perjalanan |  Tujuan Perjalanan  |-------------------------------------------------------" << endl;
+	cout << "|                  |                     |  Gol 1   |  Gol 2   |  Gol 3   |  Gol 4   |  Gol 5   |" << endl;
+	cout << "-------------------------------------------------------------------------------------------------" << endl;
+	cout << "|                  |      Palembang      |  20.500  |  26.000  |  31.000  |  37.500  |  41.500  |" << endl;
+	cout << "|   S. Indralaya   |-----------------------------------------------------------------------------" << endl;
+	cout << "|                  |      Pemulutan      |  13.500  |  17.000  |  20.000  |  25.000  |  27.000  |" << endl;
+	cout << "-------------------------------------------------------------------------------------------------" << endl;
 }
 
 // fungsi push
