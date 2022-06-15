@@ -216,12 +216,26 @@ void enqueue(){
 
 // fungsi pop
 void dequeue(){
-    if(data.empty()){								// fungsi empty untuk menghapus seluruh data pada queue
-        cout << "Kendaraan Kosong!" << endl;				
+    if(data.empty()){		// fungsi empty untuk menghapus seluruh data pada queue
+        cout << "\t\t\nNotifikasi : Antrian Kendaraan Kosong!" << endl;				
     }
     else{
-        cout << "\nKendaraan dengan " << data.front() << " pada Antrian Pertama Telah pergi!\n";
-        data.pop();
+	system("cls");
+	header();
+        time_t now = time(0);
+        char* dt = ctime(&now);
+	cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+        cout<<"\t--------------------------BUKTI TRANSAKSI------------------------"<<endl;
+        cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+        cout << "\t Tanggal Transaksi\t: " << dt;
+        cout << "\t Kendaraan\t\t: " << jenis.front() << endl;
+		cout << "\t Tujuan\t\t\t: " << jalan.front() << endl;
+		cout << "\t Nomor polisi\t\t: " << data.front() << endl;
+		cout << "\t Harga\t\t\t: " << tarif.front() << endl;
+		cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+        cout<<"\t--------------------------TOL INDRALAYA--------------------------"<<endl;
+        cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+        jenis.pop(); jalan.pop(); data.pop(); tarif.pop();
     }
 }
 
