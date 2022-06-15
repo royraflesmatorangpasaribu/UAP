@@ -244,10 +244,11 @@ void size(){
     if(data.empty()){								
         cout << "\nKendaraan Kosong!\n";
     }
-    else{
-        cout << "\nJumlah Kendaraan Saat Ini\t\t: " << data.size() << endl;	// fungsi size untuk menampilkan seluruh data pada queue
-        cout << "Kendaraan Paling Depan\t: " << data.front() << endl;		// fungsi front untuk menampilkan data paling awal pada queue
-        cout << "Kendaraan Paling Belakang\t: " << data.back() << endl;		// fungsi back untuk menampilkan data paling akhir pada queue
+     else{
+	cout << "\n\t\tKondisi Tol Saat Ini " << endl << endl;
+        cout << "\t\tJumlah Kendaraan Saat Ini   : " << data.size() << endl;	    	// fungsi size untuk menampilkan seluruh data pada queue
+        cout << "\t\tKendaraan Paling Depan      : " << data.front() << endl;		// fungsi front untuk menampilkan data paling awal pada queue
+        cout << "\t\tKendaraan Paling Belakang   : " << data.back() << endl;		// fungsi back untuk menampilkan data paling akhir pada queue
     }
 }
 
