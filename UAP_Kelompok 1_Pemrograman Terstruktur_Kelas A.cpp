@@ -6,12 +6,13 @@
 
 using namespace std;
 
-// variabel Global
+//stl
 queue<string>data;
 queue<string>jalan;
 queue<string>tarif;
 queue<string>jenis;
 
+// variabel Global
 string mobil, noPolisi, harga, gol, tujuan;
 
 void header(){
@@ -276,16 +277,22 @@ void view(queue <string> tujuanview, queue <string> platview, queue <string> gol
 
 // fungsi utama
 int main(){
+	
 	int pilihan;
+	
 	do{
-       		view(data);
-        	cout << "\n1. Masukkan No Polisi Kendaraan"
-        	     << "\n2. Memasukkan Kendaraan Ke Toll"
-        	     << "\n3. Kondisi Lalu Lintas Toll"
-        	     << "\n4. Keluar Sistem"
-        	     << "\n\n>> Choose : "; 
+		header();
+		
+       		view(jalan, data, jenis);
+		
+        	cout << "\n\t\t1. Masukkan Data kendaraan"
+        	     << "\n\t\t2. Memasukkan Kendaraan Ke Tol"
+        	     << "\n\t\t3. Kondisi Lalu Lintas Tol"
+        	     << "\n\t\t4. Keluar Sistem"
+        	     << "\n\n\t\t>> Choose : "; 
             	cin >> pilihan;
             	cin.ignore();
+		
 		switch(pilihan){
 		    case 1:
         	        enqueue();
@@ -299,17 +306,19 @@ int main(){
         	        getch();
         	        break;
 		    case 4:
-        	        cout << "\nTerima Kasih Telah Menggunakan Program Ini" << endl;
+        	        cout << "\n\t\tTerima Kasih Telah Menggunakan Program Ini" << endl;
         	        getch();
         	        break;
         	    default:
-         	       cout << "\nPilihan Tidak Ada\nMasukan Pilihan Sesuai Dengan Daftar" << endl;
+         	       cout << "\nNotifikasi : \nPilihan Tidak Ada\nMasukan Pilihan Sesuai Dengan Daftar" << endl;
          	       getch();
          	       break;
 		}
+		
         	system("cls");
+		
 	}while(pilihan != 4);
 	
-	//karena menggunakan fungsi main()
 	return 0;
+	
 }
