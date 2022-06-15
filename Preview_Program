@@ -27,3 +27,27 @@
                 4. Keluar Sistem
 
                 >> Choose :
+                
+// Chosee 1
+
+ ------------------------------------------------------------------------------------------------
+                                TARIF TOL PADA RUAS JALAN TOL INDRALAYA
+ ------------------------------------------------------------------------------------------------
+   Golongan 1: Kendaraan jenis sedan, mobil jip, pikap atau truk kecil, dan bus
+   Golongan 2: Kendaraan truk besar dengan dua gandar
+   Golongan 3: Kendaraan truk besar dengan tiga gandar
+   Golongan 4: Kendaraan truk besar dengan empat gandar
+   Golongan 5: Kendaraan truk besar dengan lima gandar
+-------------------------------------------------------------------------------------------------
+|                  |                     |                     Tarif Tol (Rp)                   |
+|  Asal Perjalanan |  Tujuan Perjalanan  |-------------------------------------------------------
+|                  |                     |  Gol 1   |  Gol 2   |  Gol 3   |  Gol 4   |  Gol 5   |
+-------------------------------------------------------------------------------------------------
+|                  |      Palembang      |  20.500  |  26.000  |  31.000  |  37.500  |  41.500  |
+|   S. Indralaya   |-----------------------------------------------------------------------------
+|                  |      Pemulutan      |  13.500  |  17.000  |  20.000  |  25.000  |  27.000  |
+-------------------------------------------------------------------------------------------------
+
+ >> Tujuan Perjalanan 1. Palembang
+                      2. Pemulutan
+ >> Pilih Tujuan :
