@@ -1,8 +1,8 @@
-//Library
-#include <iostream> 	// iostream adalah header yang dibutuhkan untuk “kegiatan” input dan output. 
+// Library
+#include <iostream> 	// Iostream adalah header yang dibutuhkan untuk “kegiatan” input dan output. 
 #include <queue>	// Memanggil STL Queue pada C++
 #include <conio.h>	// Fungsi getch() (get character and echo) dipakai untuk membaca sebuah karakter dengan sifat karakter yang dimasukkan tidak perlu diakhiri dengan menekan tombol ENTER
-#include <ctime>    	// mengkonvesi nilai yang dihasilkan dari pemangilan fungsi time() ke dalam bentuk string.
+#include <ctime>    	// Mengkonvesi nilai yang dihasilkan dari pemangilan fungsi time() ke dalam bentuk string.
 
 using namespace std;
 
@@ -69,12 +69,14 @@ void enqueue(){
     		cout << endl << " Tujuan Perjalanan Tidak Boleh Kosong!";
     		getch();
 	}
+	    
 	else if(tujuan == "1"){
 		tujuan = "Palembang";
 
 		ulang_1:
 		system("cls");
 		display();
+		
 		cout << " >> Masukkan Jenis Kendaraan\t: ";
 		getline(cin, mobil);
 			
@@ -108,7 +110,8 @@ void enqueue(){
 			else if(mobil == "5"){
 				gol = "Golongan 5";
 				harga = "Rp41.000";
-			}	
+			}
+			
 			else{
 				cout << " Golongan Mobil Tidak Tersedia";
 				getch();
@@ -133,6 +136,7 @@ void enqueue(){
 			}while(noPolisi.empty());
 			
 		}
+		
 	}
 	    
 	else if(tujuan == "2"){
@@ -199,7 +203,9 @@ void enqueue(){
 				}
 
 			}while(noPolisi.empty());
+			
 		}
+		
 	}
 
 	else{
@@ -219,14 +225,19 @@ void enqueue(){
 
 // fungsi pop
 void dequeue(){
-    if(data.empty()){		// fungsi empty untuk menghapus seluruh data pada queue
+	
+    if(data.empty()){								// fungsi empty untuk menghapus seluruh data pada queue
         cout << "\n\t\tNotifikasi : Antrian Kendaraan Kosong!" << endl;				
     }
+	
     else{
+	    
 	system("cls");
 	header();
+	    
         time_t now = time(0);
         char* dt = ctime(&now);
+	    
 	cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
         cout<<"\t--------------------------BUKTI TRANSAKSI------------------------"<<endl;
         cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
@@ -238,21 +249,27 @@ void dequeue(){
 	cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
         cout<<"\t--------------------------TOL INDRALAYA--------------------------"<<endl;
         cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+	    
         jenis.pop(); jalan.pop(); data.pop(); tarif.pop();
+	    
     }
+	
 }
 
 // fungsi size
 void size(){
+	
     if(data.empty()){									// fungsi empty untuk menghapus seluruh data pada queue
         cout << "\n\t\tNotifikasi : Antrian Kosong!\n";
     }
+	
      else{
 	cout << "\n\t\tKondisi Tol Saat Ini " << endl << endl;
         cout << "\t\tJumlah Kendaraan Saat Ini   : " << data.size() << endl;	    	// fungsi size untuk menampilkan seluruh data pada queue
         cout << "\t\tKendaraan Paling Depan      : " << data.front() << endl;		// fungsi front untuk menampilkan data paling awal pada queue
         cout << "\t\tKendaraan Paling Belakang   : " << data.back() << endl;		// fungsi back untuk menampilkan data paling akhir pada queue
     }
+	
 }
 
 // fungsi view
