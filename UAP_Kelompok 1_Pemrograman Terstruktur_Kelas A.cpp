@@ -15,6 +15,7 @@ queue<string>jenis;
 // variabel Global
 string mobil, noPolisi, harga, gol, tujuan;
 
+// Fungsi Judul 
 void header(){
 	cout << " ---------------------------------------------------------------------------------" << endl;
 	cout << " |\t        ___   ____  _  __ ______ __  __     ______ ____   __        \t |" << endl;
@@ -30,6 +31,7 @@ void header(){
 	cout << " ---------------------------------------------------------------------------------" << endl << endl;
 }
 
+// Fungsi Menampilkan Display
 void display(){
 	cout << " ------------------------------------------------------------------------------------------------" << endl;
 	cout << "                                TARIF TOL PADA RUAS JALAN TOL INDRALAYA                          " << endl;
@@ -53,7 +55,7 @@ void display(){
 // fungsi push
 void enqueue(){
     do{
-    	ulangTuju:
+    	ulangTuju:	
     	system("cls");
     	display();
 		
@@ -173,7 +175,8 @@ void enqueue(){
 			else if(mobil == "5"){
 				gol = "Golongan 5";
 				harga = "Rp27.000";
-			}	
+			}
+			
 			else{
 				cout << " Golongan Mobil Tidak Tersedia";
 				getch();
