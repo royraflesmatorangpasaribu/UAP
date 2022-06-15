@@ -254,17 +254,17 @@ void size(){
 // fungsi view
 void view(queue <string> tujuanview, queue <string> platview, queue <string> golview){
     if(data.empty()){
-	    cout << "\t\t=====================================================" << endl;
-	    cout << "\t\t\t\tPintu 1 Tol Indralaya  " << endl;
-	    cout << "\t\t=====================================================" << endl;
+	cout << "\t\t=====================================================" << endl;
+	cout << "\t\t\t\tPintu 1 Tol Indralaya  " << endl;
+	cout << "\t\t=====================================================" << endl;
         cout << "\n\t\tAntrian Kendaraan Kosong!\n";
     }
     else{
        	cout << "\t\t=====================================================" << endl;
-	    cout << "\t\t\t\tPintu 1 Tol Indralaya " << endl;
-	    cout << "\t\t=====================================================" << endl;
+	cout << "\t\t\t\tPintu 1 Tol Indralaya " << endl;
+	cout << "\t\t=====================================================" << endl;
         queue <string> t = tujuanview;
-		queue <string> p = platview;
+	queue <string> p = platview;
         queue <string> g = golview;
         while (!p.empty() && !g.empty()){
         	cout << "\n\t\t" << t.front() << " - " << p.front() << " " << g.front();
