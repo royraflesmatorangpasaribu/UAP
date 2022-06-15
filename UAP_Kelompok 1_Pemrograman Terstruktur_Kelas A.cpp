@@ -1,8 +1,8 @@
 //Library
-#include <iostream> 	//iostream adalah header yang dibutuhkan untuk “kegiatan” input dan output. 
+#include <iostream> 	// iostream adalah header yang dibutuhkan untuk “kegiatan” input dan output. 
 #include <queue>	// Memanggil STL Queue pada C++
-#include <conio.h>	//Fungsi getch() (get character and echo) dipakai untuk membaca sebuah karakter dengan sifat karakter yang dimasukkan tidak perlu diakhiri dengan menekan tombol ENTER
-#include <ctime>    // mengkonvesi nilai yang dihasilkan dari pemangilan fungsi time() ke dalam bentuk string.
+#include <conio.h>	// Fungsi getch() (get character and echo) dipakai untuk membaca sebuah karakter dengan sifat karakter yang dimasukkan tidak perlu diakhiri dengan menekan tombol ENTER
+#include <ctime>    	// mengkonvesi nilai yang dihasilkan dari pemangilan fungsi time() ke dalam bentuk string.
 
 using namespace std;
 
@@ -65,53 +65,52 @@ void enqueue(){
     	if(tujuan.empty()){
     		cout << endl << " Tujuan Perjalanan Tidak Boleh Kosong!";
     		getch();
-		}
-		else if(tujuan == "1"){
-			tujuan = "Palembang";
+	}
+	else if(tujuan == "1"){
+		tujuan = "Palembang";
+
+		ulang_1:
+		system("cls");
+		display();
+		cout << " >> Masukkan Jenis Kendaraan\t: ";
+		getline(cin, mobil);
 			
-			ulang_1:
-    		system("cls");
-    		display();
-    	
-			cout << " >> Masukkan Jenis Kendaraan\t: ";
-			getline(cin, mobil);
-			
-			if(mobil.empty()){
-				cout << endl << " Jenis Kendaraan Tidak Boleh Kosong!";
-				getch();
-				goto ulang_1;
+		if(mobil.empty()){
+			cout << endl << " Jenis Kendaraan Tidak Boleh Kosong!";
+			getch();
+			goto ulang_1;
     		}
     		
     		else{
-				if(mobil == "1"){
-					gol = "Golongan 1";
-					harga = "Rp20.500";
-				}
-			
-				else if(mobil == "2"){
-					gol = "Golongan 2";
-					harga = "Rp26.000";
-				}
-		
-				else if(mobil == "3"){
-					gol = "Golongan 3";
-					harga = "Rp31.000";
-				}
-			
-				else if(mobil == "4"){
-					gol = "Golongan 4";
-					harga = "Rp37.500";
-				}
-			
-				else if(mobil == "5"){
-					gol = "Golongan 5";
-					harga = "Rp41.000";
-				}	
-				else{
-					cout << " Golongan Mobil Tidak Tersedia";
-					getch();
-					goto ulang_1;
-				}
+			if(mobil == "1"){
+				gol = "Golongan 1";
+				harga = "Rp20.500";
+			}
+
+			else if(mobil == "2"){
+				gol = "Golongan 2";
+				harga = "Rp26.000";
+			}
+
+			else if(mobil == "3"){
+				gol = "Golongan 3";
+				harga = "Rp31.000";
+			}
+
+			else if(mobil == "4"){
+				gol = "Golongan 4";
+				harga = "Rp37.500";
+			}
+
+			else if(mobil == "5"){
+				gol = "Golongan 5";
+				harga = "Rp41.000";
+			}	
+			else{
+				cout << " Golongan Mobil Tidak Tersedia";
+				getch();
+				goto ulang_1;
+			}
 			
 			cout << endl << " Kendaraan Tujuan " << tujuan << " " << gol << " bertarif " << harga << endl;
 			getch();
@@ -130,80 +129,80 @@ void enqueue(){
 				
 			}while(noPolisi.empty());
 			
-			}
-		
 		}
-		else if(tujuan == "2"){
-			tujuan = "Pemulutan";
-			
-			ulang_2:
-    		system("cls");
-    		display();
-    	
-			cout << " >> Masukkan Jenis Kendaraan\t: ";
-			getline(cin, mobil);
-			
-			if(mobil.empty()){
-				cout << endl << " Jenis Kendaraan Tidak Boleh Kosong!";
+	}
+	    
+	else if(tujuan == "2"){
+		tujuan = "Pemulutan";
+
+		ulang_2:
+		system("cls");
+		display();
+
+		cout << " >> Masukkan Jenis Kendaraan\t: ";
+		getline(cin, mobil);
+
+		if(mobil.empty()){
+			cout << endl << " Jenis Kendaraan Tidak Boleh Kosong!";
+			getch();
+			goto ulang_2;
+		}
+
+		else{
+			if(mobil == "1"){
+				gol = "Golongan 1";
+				harga = "Rp13.500";
+			}
+
+			else if(mobil == "2"){
+				gol = "Golongan 2";
+				harga = "Rp17.000";
+			}
+
+			else if(mobil == "3"){
+				gol = "Golongan 3";
+				harga = "Rp20.000";
+			}
+
+			else if(mobil == "4"){
+				gol = "Golongan 4";
+				harga = "Rp25.000";
+			}
+
+			else if(mobil == "5"){
+				gol = "Golongan 5";
+				harga = "Rp27.000";
+			}	
+			else{
+				cout << " Golongan Mobil Tidak Tersedia";
 				getch();
 				goto ulang_2;
-    		}
-    		
-    		else{
-				if(mobil == "1"){
-					gol = "Golongan 1";
-					harga = "Rp13.500";
-				}
-			
-				else if(mobil == "2"){
-					gol = "Golongan 2";
-					harga = "Rp17.000";
-				}
-		
-				else if(mobil == "3"){
-					gol = "Golongan 3";
-					harga = "Rp20.000";
-				}
-			
-				else if(mobil == "4"){
-					gol = "Golongan 4";
-					harga = "Rp25.000";
-				}
-			
-				else if(mobil == "5"){
-					gol = "Golongan 5";
-					harga = "Rp27.000";
-				}	
-				else{
-					cout << " Golongan Mobil Tidak Tersedia";
-					getch();
-					goto ulang_2;
-				}
-			
+			}
+
 			cout << endl << " Kendaraan Tujuan " << tujuan << " " << gol << " bertarif " << harga << endl;
 			getch();
-			
+
 			do{
 				system("cls");
 				display();
-				
+
 				cout << " >> Masukan Nomor Polisi\t: ";
 				getline(cin, noPolisi);
-				
+
 				if(noPolisi.empty()){
 					cout << endl << "\t\t\nKendaraan Tidak Boleh Kosong!" << flush;
 					getch();
-					}
-				
-				}while(noPolisi.empty());
-			}
+				}
+
+			}while(noPolisi.empty());
 		}
-		
-		else{
-			cout << "\n Notifikasi : Tujuan Anda Tidak Tersedia" << endl;
-			getch();
-			goto ulangTuju;
-		}
+	}
+
+	else{
+		cout << "\n Notifikasi : Tujuan Anda Tidak Tersedia" << endl;
+		getch();
+		goto ulangTuju;
+	}
 		
     }while(tujuan.empty());
     
@@ -229,10 +228,10 @@ void dequeue(){
         cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
         cout << "\t Tanggal Transaksi\t: " << dt;
         cout << "\t Kendaraan\t\t: " << jenis.front() << endl;
-		cout << "\t Tujuan\t\t\t: " << jalan.front() << endl;
-		cout << "\t Nomor polisi\t\t: " << data.front() << endl;
-		cout << "\t Harga\t\t\t: " << tarif.front() << endl;
-		cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
+	cout << "\t Tujuan\t\t\t: " << jalan.front() << endl;
+	cout << "\t Nomor polisi\t\t: " << data.front() << endl;
+	cout << "\t Harga\t\t\t: " << tarif.front() << endl;
+	cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
         cout<<"\t--------------------------TOL INDRALAYA--------------------------"<<endl;
         cout<<"\t+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
         jenis.pop(); jalan.pop(); data.pop(); tarif.pop();
@@ -241,8 +240,8 @@ void dequeue(){
 
 // fungsi size
 void size(){
-    if(data.empty()){								
-        cout << "\nKendaraan Kosong!\n";
+    if(data.empty()){									// fungsi empty untuk menghapus seluruh data pada queue
+        cout << "\n\t\tNotifikasi : Antrian Kosong!\n";
     }
      else{
 	cout << "\n\t\tKondisi Tol Saat Ini " << endl << endl;
@@ -290,7 +289,6 @@ int main(){
 		switch(pilihan){
 		    case 1:
         	        enqueue();
-        	        getch();
         	        break;
         	    case 2:
         	        dequeue();
