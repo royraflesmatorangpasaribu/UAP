@@ -254,10 +254,10 @@ void size(){
 // fungsi view
 void view(queue <string> gq){
     if(data.empty()){
-	cout << "===============================" << endl;
-	cout << "|       Daftar Kendaraan      |" << endl;
-	cout << "===============================" << endl;
-        cout << "\nAntrian Kosong!\n";
+	    cout << "\t\t=====================================================" << endl;
+	    cout << "\t\t\t\tPintu 1 Tol Indralaya  " << endl;
+	    cout << "\t\t=====================================================" << endl;
+        cout << "\n\t\tAntrian Kendaraan Kosong!\n";
     }
     else{
        	cout << "===============================" << endl;
